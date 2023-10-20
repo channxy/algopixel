@@ -69,7 +69,7 @@
 }
 .close-icon span {
   font-size: 20px;
-  color: #222222;
+  color: #293132;
   background: #f0f6fb;
   width: 36px;
   height: 35px;
@@ -101,7 +101,7 @@
   display: none;
 }
 .mean-container .mean-nav ul li a span {
-  color: #222222 !important;
+  color: #293132 !important;
 }
 .mean-container .mean-nav ul li .mega-menu li {
 	border: none;
@@ -109,7 +109,7 @@
 	padding-left: 10px;
 }
 .mean-container .mean-nav ul li .mega-menu li a {
-  color: #222222;
+  color: #293132;
   border: none;
   padding: 0;
   font-size: 14px;
@@ -741,7 +741,7 @@
   bottom: -2px;
   right: -2px;
   border-radius: inherit;
-  border: 1px solid #6c63ff;
+  border: 1px solid #758BFD;
   -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both
     infinite;
   animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
@@ -780,7 +780,7 @@
   height: 110px;
   top: 50%;
   left: 50%;
-  border: 1px solid #6c63ff;
+  border: 1px solid #758BFD;
   -webkit-animation: zoomBig 3.25s linear infinite;
   animation: zoomBig 3.25s linear infinite;
   border-radius: 50% !important;
@@ -866,7 +866,7 @@
 .object{
 	width: 20px;
 	height: 20px;
-	background-color: #6c63ff;
+	background-color: #758BFD;
 	float: left;
 	margin-right: 20px;
 	margin-top: 65px;

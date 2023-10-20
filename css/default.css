@@ -836,7 +836,7 @@
 
 /* Background Color */
 .theme-bg{
-	background: #6c63ff;
+	background: #758BFD;
 }
 .primary-bg{
 	background: #f0f6fb;
@@ -846,7 +846,7 @@
 	background: #fff;
 }
 .black-bg {
-	background: #222222;
+	background: #293132;
 }
 .dark-black-bg {background: #000000 !important;}
 .gray-bg {background: #D4D4D4;}
@@ -856,7 +856,7 @@
 
 /* Color */
 .theme-color{
-	color: #6c63ff;
+	color: #758BFD;
 }
 .dark-black-color{color: #000000;}
 .primary-color{
@@ -869,20 +869,20 @@
 	color: #fff;
 }
 .black-color {
-	color: #222222;
+	color: #293132;
 }
 
 /* hover */
-.theme-hover:hover{color: #6c63ff;}
+.theme-hover:hover{color: #758BFD;}
 
 
 
 /* border */
-.theme-border{border:1px solid #6c63ff}
+.theme-border{border:1px solid #758BFD}
 .primary-border{border: 1px solid #d1dbe5 !important;}
 .white-border{border:1px solid #fff}
 .secondary-border01{border: 1px solid #d8d7e6;}
-.theme-border-bottom2{border-bottom:2px solid #6c63ff}
+.theme-border-bottom2{border-bottom:2px solid #758BFD}
 .footer-border-bottom{border-bottom: 1px solid #dcdce1;}
 
 /* social-link-color */
