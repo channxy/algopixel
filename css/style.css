@@ -64,6 +64,7 @@ p {
 .flat-family {font-family: "Flaticon";}
 span,
 input,
+select,
 img{
 	max-width: 100%;
 	transition: all 0.3s ease-out 0s;
@@ -1662,7 +1663,7 @@ input:checked + .slider::before{ transform: translateX(26px);}
 .page-title h2{font-size: 42px;}
 .blog-page3-content p {line-break: anywhere;}
 .single-author-post h4{font-size: 18px;line-height: 1.6;}
-.contact-form input,.comment textarea {
+.contact-form input,.comment textarea, .contact-form select{
 	border: 1px solid #e5e5e5;
 	height: 60px;
 }
