@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" href="images/algopixel/Algopixel Pacman.png" type="image/x-icon">
+        <link rel="shortcut icon" href="images/algopixel/Algopixelpacman.png" type="image/x-icon">
 
         <!-- All css here -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -39,17 +39,20 @@
             window.onload = function() {
                 document.getElementById('contact-form').addEventListener('submit', function(event) {
                     event.preventDefault();
-                    // var formMessages = $('.form-message');
                     const successToast = document.querySelector('.form-message')
                     const dangerToast = document.querySelector('form-message')
-                    emailjs.sendForm('service_pjho77k','template_4tg47x3',this)
+                    emailjs.sendForm('service_pjho77k','template_eusam9z',this)
                         .then(function() {
                             console.log('SUCCESS!');
                             $('#inputName').val('');
                             $('#inputEmail').val('');
                             $('#inputPhone').val('');
                             $('#inputMessage').val('');
-                            new CustomToast().show(`Form successfully Submitted! We will respond to your query within 3 working days.`, 'success', 10000)
+                            $('#numberChild').val($("#numberChild").data("default-value"));
+                            $('#selectTimeslot').val($("#selectTimeslot").data("default-value"));
+                            $('#selectMode').val($("#selectMode").data("default-value"));
+
+                            new CustomToast().show(`Registration form submitted! We will confirm the trial details with you within 3 working days.`, 'success', 10000)
                         }, function(error) {
                             console.log('FAILED...', error);
                             new CustomToast().show(`Oops! An error occurred and your message could not be sent. Please drop us an email at hello@algopixel.sg`, 'warning', 10000)
@@ -91,7 +94,7 @@
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
                                         <ul class="d-block">
-                                            <li><a href="about-us.html">About</a></li>
+                                            <li><a href="about.html">About</a></li>
                                             <li><a href="programmes.html">Programmes</a>
                                                 <ul class="mega-menu mega-dropdown-menu white-bg ml-0">
                                                     <li><a href="tracks.html">by Tracks</a></li>
@@ -101,10 +104,10 @@
                                             </li>
                                             <!-- <li><a href="faq.html">FAQ</a>
                                             </li> -->
-                                            <li><a href="schedule.html">Schedule</a></li>
-                                            <li><a href="contact-us.html">Contact</a>
+                                            <li><a href="structure.html">Structure</a></li>
+                                            <li><a href="contact.html">Contact</a>
                                                 <!-- <ul class="mega-menu mega-dropdown-menu white-bg ml-0">
-                                                    <li><a href="contact-us.html">Contact Info</a></li>
+                                                    <li><a href="contact.html">Contact Info</a></li>
                                                     <li><a href="careers.html">Careers</a></li>
                                                 </ul> -->
                                             </li>
@@ -122,7 +125,7 @@
                                         </li>
                                     </ul> -->
                                     <div class="my-btn ml-20 d-none d-sm-block">
-                                        <a href="#" class="btn theme-bg text-capitalize">Sign Up</a>
+                                        <a href="register.html" class="btn theme-bg text-capitalize">Sign Up</a>
                                     </div><!-- /my-btn -->
                                     <div class="d-block d-lg-none pl-20">
                                         <a class="mobile-menubar theme-color" href="javascript:void(0);"><i class="far fa-bars"></i></a>
@@ -182,7 +185,7 @@
             <!-- mobile phone area -->
             <div class="mobile-phone-contact phone-contact mt-150 mb-25">
                 <h6 class="f-700 mb-0">Whatsapp Us</h6>
-                <a class="theme-color f-700" href="#">+65 8800 1637
+                <a class="theme-color f-700" href="https://wa.me/+6588001637" target="_blank">+65 8800 1637
                 </a>
             </div><!-- /mobile phone area -->
             
@@ -265,7 +268,6 @@
                                                       <li>&#8226; Curriculum Preview</li>
                                                       <li>&#8226; Hands-On Experience</li>
                                                       <li>&#8226; Feedback and Questions</li>
-                                                      <li>&#8226; Assessing Suitability for Children</li>
                                                     </ul>
                                                       
                                                       
@@ -349,7 +351,7 @@
                                                         <input class="phone w-100 theme-border pl-20 pt-15 pb-15 pr-10" type="text" name="from_phone" id="inputPhone" placeholder="Your Phone *" required><!-- /phone -->
                                                     </div><!-- /col -->
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-15" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                                                        <select class="w-100 theme-border pl-20 pt-15 pb-15 pr-10" type="" name="timslots" id="select Timeslot" placeholder="Choose a Timeslot*" required>
+                                                        <select class="w-100 theme-border pl-20 pt-15 pb-15 pr-10" type="" name="from_child" id="numberChild" data-default-value="" required>
                                                             <option value="">Number of child attending *</option>
                                                             <option value="1">1</option>
                                                             <option value="2">2</option>
@@ -358,14 +360,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-15" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                                                        <select class="w-100 theme-border pl-20 pt-15 pb-15 pr-10" type="" name="timslots" id="select Timeslot" placeholder="Choose a Timeslot*" required>
-                                                            <option value="">Do you have a laptop?*</option>
-                                                            <option value="yes">Yes</option>
-                                                            <option value="no">No</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-15" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                                                        <select class="w-100 theme-border pl-20 pt-15 pb-15 pr-10" type="" name="timslots" id="select Timeslot" placeholder="Choose a Timeslot*" required>
+                                                        <select class="w-100 theme-border pl-20 pt-15 pb-15 pr-10" type="" name="from_timeslot" id="selectTimeslot" data-default-value="" required>
                                                             <option value="">Preferred timeslot *</option>
                                                             <option value="Weekdays Evening">Weekdays Evening</option>
                                                             <option value="Weekends Morning">Weekends Morning</option>
@@ -373,7 +368,7 @@
                                                         </select>
                                                     </div>
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-15" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                                                        <select class="w-100 theme-border pl-20 pt-15 pb-15 pr-10" type="" name="timslots" id="select Timeslot" placeholder="Choose a Timeslot*" required>
+                                                        <select class="w-100 theme-border pl-20 pt-15 pb-15 pr-10" type="" name="from_mode" id="selectMode" data-default-value=""  required>
                                                             <option value="">Preferred mode of trial *</option>
                                                             <option value="Virtual">Virtual</option>
                                                             <option value="In-Person">In-Person</option>
@@ -383,7 +378,7 @@
                                                 </div><!-- /row -->
                                                 <div class="row ">
                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-15" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                                                        <textarea class="massage w-100 primary-border pl-20 pt-20" name="from_query" id="inputMessage" placeholder="Any other information you would like us to know?" required></textarea><!-- /textarea -->
+                                                        <textarea class="massage w-100 primary-border pl-20 pt-20" name="from_info" id="inputMessage" placeholder="Other Information *&#10;- Age of Child&#10;- Prior coding experience&#10;- Others" required></textarea><!-- /textarea -->
                                                     </div><!-- /col -->
                                                 </div><!-- /row -->
                                                 <div class="my-btn mt-40">
@@ -412,7 +407,7 @@
                 <div class="footer-top">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-5 col-lg-4  col-md-12  col-sm-12 col-12">
+                            <div class="col-xl-6 col-lg-4  col-md-12  col-sm-12 col-12">
                                 <div class="footer-widget f-subscriber-area pb-30 mt-15 pr-100">
                                     <div class="f-logo">
                                         <img src="images/algopixel/Algopixel_Line.png" alt="Algopixel Coding">
@@ -428,12 +423,12 @@
                                     </div>
                                 </div>
                             </div><!-- /col -->
-                            <div class="col-xl-2  col-lg-2  col-md-3  col-sm-6 col-12">
+                            <div class="col-xl-3  col-lg-3  col-md-4  col-sm-6 col-12">
                                 <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
                                     <h6 class="text-capitalize f-700 mb-22">about</h6>
                                     <ul class="footer-info">
                                         <li>
-                                            <a href="about-us.html" class="position-relative d-inline-block mb-2">Our Story</a>
+                                            <a href="about.html" class="position-relative d-inline-block mb-2">Our Story</a>
                                         </li>
                                         <!-- <li>
                                             <a href="faq.html" class="position-relative d-inline-block mb-2">FAQ</a>
@@ -442,31 +437,19 @@
                                             <a href="careers.html" class="position-relative d-inline-block mb-2">Careers</a>
                                         </li> -->
                                         <li>
-                                            <a href="contact-us.html" class="position-relative d-inline-block mb-2">Contact Us</a>
+                                            <a href="courses.html" class="position-relative d-inline-block mb-2">Courses</a>
                                         </li>
                                         <li>
-                                            <a href="schedule.html" class="position-relative d-inline-block mb-2">Schedule</a>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-2 col-lg-2  col-md-3  col-sm-6 col-12">
-                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Programmes</h6>
-                                    <ul class="footer-info">
-                                        <li>
-                                            <a href="tracks.html" class="position-relative d-inline-block mb-2">by Tracks</a>
+                                            <a href="structure.html" class="position-relative d-inline-block mb-2">Structure</a>
                                         </li>
                                         <li>
-                                            <a href="courses.html" class="position-relative d-inline-block mb-2">by Courses</a>
-                                        </li>
-                                        <li>
-                                            <a href="agegroup.html" class="position-relative d-inline-block mb-2">by Age Groups</a>
+                                            <a href="contact.html" class="position-relative d-inline-block mb-2">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div><!-- /col -->
+
+                            <!-- /col -->
                             <div class="col-xl-3  col-lg-4  col-md-6  col-sm-12 col-12 pr-xl-0">
                                 <div class="footer-widget f-adress pb-40 mt-25">
                                     <h6 class="text-capitalize f-700 mb-22">Get in Touch</h6>
@@ -528,7 +511,6 @@
                 
             </div>
         </footer>
-
         <!-- back top -->
         <div id="scroll" class="scroll-up position-relative z-index11">
             <div class="top text-center"><span class="white-color theme-bg"><i class="fa fa-arrow-alt-up"></i></span></div>
@@ -557,5 +539,5 @@
 
     </body>
 
-<!-- Mirrored from ethemestudio.com/demo/evalo/evalo-html-template/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 10:21:12 GMT -->
+<!-- Mirrored from ethemestudio.com/demo/evalo/evalo-html-template/contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 10:21:12 GMT -->
 </html>
