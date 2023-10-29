@@ -1667,6 +1667,20 @@ input:checked + .slider::before{ transform: translateX(26px);}
 	border: 1px solid #e5e5e5;
 	height: 60px;
 }
+
+.contact-form select:invalid {
+    color: #C0C0C0;
+}
+
+.contact-form select > option {
+    color: rgb(0, 0, 0);
+}
+
+.contact-form select option[value=""], select option:not([value]) {
+    color: #C0C0C0;
+}
+
+
 .comment textarea{min-height: 155px;}
 .quote-area {background: #f9fcfd;}
 .quote-area span{font-size: 21px;}
