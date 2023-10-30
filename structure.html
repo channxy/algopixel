@@ -1,300 +1,466 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
-    
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Algopixel</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" href="images/algopixel/Algopixelpacman.png" type="image/x-icon">
-    <meta name="56e53846-fe97-4baa-909f-82176ad117d5" content="origin">
+    <link
+      rel="shortcut icon"
+      href="images/algopixel/Algopixelpacman.png"
+      type="image/x-icon"
+    />
+    <meta name="56e53846-fe97-4baa-909f-82176ad117d5" content="origin" />
 
     <!-- All css here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/meanmenu.css">
-    <link rel="stylesheet" href="css/all-animations.css">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-    <body>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/meanmenu.css" />
+    <link rel="stylesheet" href="css/all-animations.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!--  ====== preloader=============================================  -->
+    <div id="preloader">
+      <div id="loading">
+        <div id="loading-center">
+          <div id="loading-center-absolute">
+            <div class="object" id="object_one"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_three"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /preloader -->
 
-        <!--  ====== preloader=============================================  -->
-        <div id="preloader">
-            <div id="loading">
-                <div id="loading-center">
-                    <div id="loading-center-absolute">
-                        <div class="object" id="object_one"></div>
-                        <div class="object" id="object_two"></div>
-                        <div class="object" id="object_three"></div>
-                    </div>
+    <!--  ====== header-area-start=======================================  -->
+    <header>
+      <div id="header-sticky" class="transparent-header header-area">
+        <div class="header">
+          <div class="container">
+            <div
+              class="row align-items-center justify-content-between position-relative"
+            >
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-6">
+                <div class="logo">
+                  <a href="index.html" class="d-block"
+                    ><img
+                      src="images/algopixel/Algopixel_Line.png"
+                      alt="Algopixel"
+                  /></a>
                 </div>
+              </div>
+              <!-- /col -->
+              <div
+                class="col-xl-6 col-lg-6 col-md-1 col-sm-1 col-1 d-none d-lg-flex justify-content-end position-static"
+              >
+                <div class="main-menu">
+                  <nav id="mobile-menu">
+                    <ul class="d-block">
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="courses.html">Courses</a></li>
+                      <li><a href="structure.html">Structure</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- /main-menu -->
+              </div>
+              <!-- /col -->
+              <div
+                class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-4 pl-lg-0 pl-xl-3"
+              >
+                <div
+                  class="header-right d-flex align-items-center justify-content-lg-between justify-content-end"
+                >
+                  <div class="my-btn ml-20 d-none d-sm-block">
+                    <a href="register.html" class="btn theme-bg text-capitalize"
+                      >Sign Up</a
+                    >
+                  </div>
+                  <!-- /my-btn -->
+                  <div class="d-block d-lg-none pl-20">
+                    <a
+                      class="mobile-menubar theme-color"
+                      href="javascript:void(0);"
+                      ><i class="far fa-bars"></i
+                    ></a>
+                  </div>
+                  <!-- <div class="mobile-menu"></div> -->
+                </div>
+                <!-- /header-right -->
+              </div>
+              <!-- /col -->
             </div>
-        </div><!-- /preloader -->
-     
-        <!--  ====== header-area-start=======================================  -->
-        <header>
-            <div id="header-sticky" class="transparent-header header-area">
-                <div class="header">
-                    <div class="container">
-                        <div class="row align-items-center justify-content-between position-relative">
-                            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 col-6">
-                                <div class="logo">
-                                    <a href="index.html" class="d-block"><img src="images/algopixel/Algopixel_Line.png" alt="Algopixel"></a>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-6 col-lg-6 col-md-1 col-sm-1 col-1 d-none d-lg-flex justify-content-end position-static">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul class="d-block">
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="courses.html">Courses</a>
-                                            </li>
-                                            <li><a href="structure.html">Structure</a></li>
-                                            <li><a href="contact.html">Contact</a>
-                                            </li>
-                                            
-                                         </ul>
-                                    </nav>
-                                </div><!-- /main-menu -->
-                            </div><!-- /col -->
-                            <div class="col-xl-3  col-lg-3 col-md-6 col-sm-6 col-4 pl-lg-0 pl-xl-3">
-                                <div class="header-right d-flex align-items-center justify-content-lg-between justify-content-end">
-                                    <div class="my-btn ml-20 d-none d-sm-block">
-                                        <a href="register.html" class="btn theme-bg text-capitalize">Sign Up</a>
-                                    </div><!-- /my-btn -->
-                                    <div class="d-block d-lg-none pl-20">
-                                        <a class="mobile-menubar theme-color" href="javascript:void(0);"><i class="far fa-bars"></i></a>
-                                    </div>
-                                    <!-- <div class="mobile-menu"></div> -->
-                                </div><!-- /header-right -->
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                    </div><!-- /container -->
-                </div>
-            </div><!-- /header-bottom -->
-        </header>
-        <!--  header-area-end  -->
+            <!-- /row -->
+          </div>
+          <!-- /container -->
+        </div>
+      </div>
+      <!-- /header-bottom -->
+    </header>
+    <!--  header-area-end  -->
 
+    <!--  ====== header extra info start================================== -->
+    <!-- side-mobile-menu start -->
+    <div class="side-mobile-menu white-bg pt-10 pb-30 pl-35 pr-30 pb-100">
+      <div class="w-100">
+        <div
+          class="close-icon d-inline-block float-right clear-both mt-15 mb-10"
+        >
+          <a href="javascript:void(0);"
+            ><span class="icon-clear theme-color"
+              ><i class="fa fa-times"></i></span
+          ></a>
+        </div>
+      </div>
 
-        <!--  ====== header extra info start================================== -->
-        <!-- side-mobile-menu start -->
-        <div class="side-mobile-menu white-bg pt-10 pb-30 pl-35 pr-30 pb-100">
-            <div class="w-100">
-                <div class="close-icon d-inline-block float-right clear-both mt-15 mb-10">
-                    <a href="javascript:void(0);"><span class="icon-clear theme-color"><i class="fa fa-times"></i></span></a>
-                </div>
-            </div>
+      <div class="mobile-menu mt-10 w-100"></div>
 
-            <div class="mobile-menu mt-10 w-100"></div>
-
-            
-            <ul class="social-link pt-50 clear-both">
-                <li class="d-inline-block">
-                    <a class="facebook-color text-center pr-15 d-inline-block transition-3" href="https://www.facebook.com/profile.php?id=61552669371144" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="d-inline-block">
-                    <a class="instagram-color text-center d-inline-block transition-3" href="https://www.instagram.com/algopixelcoding/" target="_blank"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul><!-- social-link -->
+      <ul class="social-link pt-50 clear-both">
+        <li class="d-inline-block">
+          <a
+            class="facebook-color text-center pr-15 d-inline-block transition-3"
+            href="https://www.facebook.com/profile.php?id=61552669371144"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+        </li>
+        <li class="d-inline-block">
+          <a
+            class="instagram-color text-center d-inline-block transition-3"
+            href="https://www.instagram.com/algopixelcoding/"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+      <!-- social-link -->
 
             <!-- mobile phone area -->
-            <div class="mobile-phone-contact phone-contact mt-150 mb-25">
-                <h6 class="f-700 mb-0">Whatsapp Us</h6>
+            <div class="my-btn justify-content-center align-items-center mt-100">
+                <a href="register.html" class="btn theme-bg text-capitalize">Sign Up Here</a>
+            </div>
+            <div class="mobile-phone-contact phone-contact mt-10 mb-25">
+                <h6 class="f-700 mb-0">or Whatsapp us at</h6>
                 <a class="theme-color f-700" href="https://wa.me/+6588001637" target="_blank">+65 8800 1637
                 </a>
             </div><!-- /mobile phone area -->
 
         </div><!-- /side-mobile-menu -->
-        <div class="body-overlay"></div>
-   
 
-        <main>
-            <!-- ======slider-area-start=========================================== -->
-            <div class="slider-area position-relative primary-bg">
-                <div id="scene" class="position-absolute w-100 h-100">
-                    <img data-depth="0.20" class="shape page-shape-1 d-none d-lg-inline-block s-shape" src="images/slider/page-shape/page-shape1.png" alt="#">
-                    <img data-depth="0.20" class="shape page-shape-2 d-none d-lg-inline-block s-shape" src="images/slider/page-shape/page-shape2.png" alt="#">
-                    <img data-depth="0.20" class="shape page-shape-3 d-none d-lg-inline-block" src="images/slider/page-shape/page-shape3.png" alt="#">
-                    <img data-depth="0.20" class="shape page-shape-4 d-none d-lg-inline-block" src="images/slider/page-shape/page-shape4.png" alt="#">
-                    <img data-depth="0.20" class="shape page-shape-5 d-none d-lg-inline-block bounce-animate2" src="images/slider/page-shape/page-shape5.png" alt="#">
-                    <img data-depth="0.20" class="shape page-shape-6 d-none d-lg-inline-block bounce-animate" src="images/slider/page-shape/page-shape6.png" alt="#">
-                    <img data-depth="0.20" class="shape page-shape-7 d-none d-lg-inline-block s-shape" src="images/slider/page-shape/page-shape1.png" alt="#">
+    <div class="body-overlay"></div>
+
+    <main>
+      <!-- ======slider-area-start=========================================== -->
+      <div class="slider-area position-relative primary-bg">
+        <div id="scene" class="position-absolute w-100 h-100">
+          <img
+            data-depth="0.20"
+            class="shape page-shape-1 d-none d-lg-inline-block s-shape"
+            src="images/slider/page-shape/page-shape1.png"
+            alt="#"
+          />
+          <img
+            data-depth="0.20"
+            class="shape page-shape-2 d-none d-lg-inline-block s-shape"
+            src="images/slider/page-shape/page-shape2.png"
+            alt="#"
+          />
+          <img
+            data-depth="0.20"
+            class="shape page-shape-3 d-none d-lg-inline-block"
+            src="images/slider/page-shape/page-shape3.png"
+            alt="#"
+          />
+          <img
+            data-depth="0.20"
+            class="shape page-shape-4 d-none d-lg-inline-block"
+            src="images/slider/page-shape/page-shape4.png"
+            alt="#"
+          />
+          <img
+            data-depth="0.20"
+            class="shape page-shape-5 d-none d-lg-inline-block bounce-animate2"
+            src="images/slider/page-shape/page-shape5.png"
+            alt="#"
+          />
+          <img
+            data-depth="0.20"
+            class="shape page-shape-6 d-none d-lg-inline-block bounce-animate"
+            src="images/slider/page-shape/page-shape6.png"
+            alt="#"
+          />
+          <img
+            data-depth="0.20"
+            class="shape page-shape-7 d-none d-lg-inline-block s-shape"
+            src="images/slider/page-shape/page-shape1.png"
+            alt="#"
+          />
+        </div>
+        <!-- /shape-slider -->
+
+        <div class="single-page page-height d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center"
+              >
+                <div class="page-title mt-110 text-center">
+                  <!-- <span class="theme-color f-700">Class Structure</span> -->
+                  <h1 class="text-capitalize f-700 mt-10 mb-20">
+                    Schedule & Pricing
+                  </h1>
+                  <nav aria-label="breadcrumb">
+                    <ol
+                      class="breadcrumb justify-content-center bg-transparent"
+                    >
+                      <li class="breadcrumb-item">
+                        <a class="secondary-color3" href="index.html">Home</a>
+                      </li>
+                      <li
+                        class="breadcrumb-item active text-capitalize secondary-color3"
+                        aria-current="page"
+                      >
+                        Structure
+                      </li>
+                    </ol>
+                  </nav>
                 </div>
-                <!-- /shape-slider -->
-
-                <div class="single-page page-height d-flex align-items-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12  col-lg-12  col-md-12  col-sm-12 col-12  d-flex align-items-center justify-content-center">
-                                <div class="page-title mt-110 text-center">
-                                    <!-- <span class="theme-color f-700">Class Structure</span> -->
-                                    <h1 class="text-capitalize f-700 mt-10 mb-20">Schedule & Pricing</h1>
-                                    <nav aria-label="breadcrumb">
-                                        <ol class="breadcrumb justify-content-center bg-transparent">
-                                        <li class="breadcrumb-item"><a class="secondary-color3" href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item active text-capitalize secondary-color3" aria-current="page">Structure</li>
-                                        </ol>
-                                    </nav>
-                                </div><!-- /page title -->
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                    </div><!-- /container -->
-                <!-- </div> -->
+                <!-- /page title -->
+              </div>
+              <!-- /col -->
             </div>
+            <!-- /row -->
+          </div>
+          <!-- /container -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- slider-area-end  -->
+
+      <div id="schedule" class="schedule-area mb-165 mt-155">
+        <div class="schedule-wrapper position-relative">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-lg-6 col-md-12 col-sm-12 col-12 mb-5 ">
+                <img
+                  src="images/schedule/classschedule.png"
+                  alt="Class Schedule"
+                />
+              </div>
+              <div class="col-xl-8 col-lg-6 col-md-12 col-sm-12 col-12">
+                <img src="images/schedule/pricing.png" alt="Class Pricing" />
+              </div>
             </div>
-            <!-- slider-area-end  -->
+            <!-- /row -->
+          </div>
+          <!-- /container -->
+        </div>
+        <!-- /contact-wrapper -->
+      </div>
+    </main>
 
-
-
-
-
-        </main>
-          
-        <!-- ====== footer-area-start ============================================ -->
-        <footer> 
-            <div class="footer-area home3 primary-bg pt-90">
-
-                <div class="footer-top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-4  col-md-12  col-sm-12 col-12">
-                                <div class="footer-widget f-subscriber-area pb-30 mt-15 pr-100">
-                                    <div class="f-logo">
-                                        <img src="images/algopixel/Algopixel_Line.png" alt="Algopixel Coding">
-                                    </div><!-- /f-logo -->
-                                    <div class="footer-subscribe mt-25">
-                                        <!-- <p>Subscribe to receive the latest event updates and news:</p>
+    <!-- ====== footer-area-start ============================================ -->
+    <footer>
+      <div class="footer-area home3 primary-bg pt-90">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-4 col-md-12 col-sm-12 col-12">
+                <div class="footer-widget f-subscriber-area pb-30 mt-15 pr-100">
+                  <div class="f-logo">
+                    <img
+                      src="images/algopixel/Algopixel_Line.png"
+                      alt="Algopixel Coding"
+                    />
+                  </div>
+                  <!-- /f-logo -->
+                  <div class="footer-subscribe mt-25">
+                    <!-- <p>Subscribe to receive the latest event updates and news:</p>
                                         <form action="#">
                                             <div class="subscribe-info mt-22 position-relative">
                                                 <input class="sub-name form-control border-0 pl-20 pt-15 pb-15 pr-10 white-bg secondary-color rounded-0" type="email" name="email" id="email" placeholder="Submit email">
                                                 <span class="secondary-color d-inline-block position-absolute pointer"><i class="far fa-envelope"></i></span>
                                             </div>
                                         </form> -->
-                                    </div>
-                                </div>
-                            </div><!-- /col -->
-                            <div class="col-xl-3  col-lg-3  col-md-4  col-sm-6 col-12">
-                                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">about</h6>
-                                    <ul class="footer-info">
-                                        <li>
-                                            <a href="about.html" class="position-relative d-inline-block mb-2">Our Story</a>
-                                        </li>
-                                        <!-- <li>
+                  </div>
+                </div>
+              </div>
+              <!-- /col -->
+              <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="footer-widget f-info pb-30 ml-40 pr-20 mt-25">
+                  <h6 class="text-capitalize f-700 mb-22">about</h6>
+                  <ul class="footer-info">
+                    <li>
+                      <a
+                        href="about.html"
+                        class="position-relative d-inline-block mb-2"
+                        >Our Story</a
+                      >
+                    </li>
+                    <!-- <li>
                                             <a href="faq.html" class="position-relative d-inline-block mb-2">FAQ</a>
                                         </li> -->
-                                        <!-- <li>
+                    <!-- <li>
                                             <a href="careers.html" class="position-relative d-inline-block mb-2">Careers</a>
                                         </li> -->
-                                        <li>
-                                            <a href="courses.html" class="position-relative d-inline-block mb-2">Courses</a>
-                                        </li>
-                                        <li>
-                                            <a href="structure.html" class="position-relative d-inline-block mb-2">Structure</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html" class="position-relative d-inline-block mb-2">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div><!-- /col -->
+                    <li>
+                      <a
+                        href="courses.html"
+                        class="position-relative d-inline-block mb-2"
+                        >Courses</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="structure.html"
+                        class="position-relative d-inline-block mb-2"
+                        >Structure</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="position-relative d-inline-block mb-2"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /col -->
 
-                            <!-- /col -->
-                            <div class="col-xl-3  col-lg-4  col-md-6  col-sm-12 col-12 pr-xl-0">
-                                <div class="footer-widget f-adress pb-40 mt-25">
-                                    <h6 class="text-capitalize f-700 mb-22">Get in Touch</h6>
-                                    <ul class="footer-address">
-                                        <li class="d-flex align-items-start mb-10">
-                                            <span class="f-icon mr-20"><i class="fas fa-map-marker-alt"></i></span> 
-                                            <div class="">
-                                                <a
-                                                href="https://goo.gl/maps/maBhbZKMjmjsgrRy9"
-                                                target="_blank"
-                                                class="text-link"
-                                                ><b>Junction 10</b></a>
-                                                <br>1 Woodlands Rd  #01-09<br>Singapore 677899<br>
-
-                                            </div>  
-                                        </li>
-                                        <li class="mb-12">
-                                            <span class="f-icon mr-20"><i class="far fa-envelope"></i></span>
-                                            hello@algopixel.sg
-                                        </li>
-                                        <li>
-                                            <span class="f-icon mr-20"><i class="far fa-phone"></i></span>
-                                            +65 8800 1637
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div><!-- /col -->
-                        </div><!-- /row -->
-                        <div class="footer-border-bottom pt-70"></div>
-                    </div><!-- /container -->
-                    
-                </div><!-- /footer-top -->
-
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="copyright-area pb-60 pt-20">
-                            <div class="row align-items-center justify-content-between">
-                                <div class="col-xl-6 col-lg-6 col-md-6  col-sm-12 col-12 mt-10">
-                                    <div class="copyright-text">
-                                        <p class="mb-0 secondary-color2">All rights reserved 
-                                            <a href="" class="c-theme f-700 black-color">Algopixel Coding</a>  ©  2023
-                                        </p>
-                                    </div>
-                                </div><!-- /col -->
-                                <div class="col-xl-6 col-lg-6  col-md-6 col-sm-12 col-12 mt-10 d-flex align-items-center justify-content-md-end">
-                                    <ul class="social-link">
-                                        <li class="d-inline-block">
-                                            <a class="facebook-color text-center pr-15 d-inline-block transition-3" href="https://www.facebook.com/profile.php?id=61552669371144" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="d-inline-block">
-                                            <a class="instagram-color text-center d-inline-block transition-3" href="https://www.instagram.com/algopixelcoding/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                    </ul><!-- social-link -->
-                                </div><!-- /col -->
-                            </div>
-                        </div><!-- /copyright-area -->
-                    </div><!-- /container -->
-                </div><!-- /footer-bottom -->
-                
+              <!-- /col -->
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-12 pr-xl-0">
+                <div class="footer-widget f-adress pb-40 mt-25">
+                  <h6 class="text-capitalize f-700 mb-22">Get in Touch</h6>
+                  <ul class="footer-address">
+                    <li class="d-flex align-items-start mb-10">
+                      <span class="f-icon mr-20"
+                        ><i class="fas fa-map-marker-alt"></i
+                      ></span>
+                      <div class="">
+                        <a
+                          href="https://goo.gl/maps/maBhbZKMjmjsgrRy9"
+                          target="_blank"
+                          class="text-link"
+                          ><b>Junction 10</b></a
+                        >
+                        <br />1 Woodlands Rd #01-09<br />Singapore 677899<br />
+                      </div>
+                    </li>
+                    <li class="mb-12">
+                      <span class="f-icon mr-20"
+                        ><i class="far fa-envelope"></i
+                      ></span>
+                      hello@algopixel.sg
+                    </li>
+                    <li>
+                      <span class="f-icon mr-20"
+                        ><i class="far fa-phone"></i
+                      ></span>
+                      +65 8800 1637
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /col -->
             </div>
-        </footer>
-
-        <!-- back top -->
-        <div id="scroll" class="scroll-up position-relative z-index11">
-            <div class="top text-center"><span class="white-color theme-bg"><i class="fa fa-arrow-alt-up"></i></span></div>
+            <!-- /row -->
+            <div class="footer-border-bottom pt-70"></div>
+          </div>
+          <!-- /container -->
         </div>
-        <!-- back to top end -->
+        <!-- /footer-top -->
 
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="copyright-area pb-60 pt-20">
+              <div class="row align-items-center justify-content-between">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-10">
+                  <div class="copyright-text">
+                    <p class="mb-0 secondary-color2">
+                      All rights reserved
+                      <a href="" class="c-theme f-700 black-color"
+                        >Algopixel Coding</a
+                      >
+                      © 2023
+                    </p>
+                  </div>
+                </div>
+                <!-- /col -->
+                <div
+                  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 mt-10 d-flex align-items-center justify-content-md-end"
+                >
+                  <ul class="social-link">
+                    <li class="d-inline-block">
+                      <a
+                        class="facebook-color text-center pr-15 d-inline-block transition-3"
+                        href="https://www.facebook.com/profile.php?id=61552669371144"
+                        target="_blank"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li class="d-inline-block">
+                      <a
+                        class="instagram-color text-center d-inline-block transition-3"
+                        href="https://www.instagram.com/algopixelcoding/"
+                        target="_blank"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <!-- social-link -->
+                </div>
+                <!-- /col -->
+              </div>
+            </div>
+            <!-- /copyright-area -->
+          </div>
+          <!-- /container -->
+        </div>
+        <!-- /footer-bottom -->
+      </div>
+    </footer>
 
-        <!-- All js here -->
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/parallax.js"></script>
-        <script src="js/image-loaded.min.js"></script>
-        <script src="js/jquery.fancybox.min.js"></script>
-        <script src="js/waypoint.js"></script>
-        <script src="js/counterup-min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/tilt.jquery.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/jquery.meanmenu.min.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <!-- back top -->
+    <div id="scroll" class="scroll-up position-relative z-index11">
+      <div class="top text-center">
+        <span class="white-color theme-bg"
+          ><i class="fa fa-arrow-alt-up"></i
+        ></span>
+      </div>
+    </div>
+    <!-- back to top end -->
+
+    <!-- All js here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/image-loaded.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/waypoint.js"></script>
+    <script src="js/counterup-min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
